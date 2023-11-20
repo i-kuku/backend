@@ -18,7 +18,7 @@ defmodule IKukuWeb.Endpoint do
   # You should set gzip to true if you are running phx.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/",
+    at: "/i_kuku",
     from: :i_kuku,
     gzip: false,
     only: IKukuWeb.static_paths()

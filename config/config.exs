@@ -13,6 +13,8 @@ config :i_kuku,
 # Configures the endpoint
 config :i_kuku, IKukuWeb.Endpoint,
   url: [host: "localhost"],
+  static_url: [path: "/i_kuku"],
+  adapter: Phoenix.Endpoint.Cowboy2Adapter,
   render_errors: [
     formats: [html: IKukuWeb.ErrorHTML, json: IKukuWeb.ErrorJSON],
     layout: false
